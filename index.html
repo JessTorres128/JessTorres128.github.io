@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmobiliaria</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="/css/mediaquerymain.css">
+</head>
+<body>
+    <div id="fondoN"></div>
+    <header>
+        <div id="logo">
+            <img src="/img/realestate.png" alt="">
+            <h1>Inmobiliaria</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Publicar gratis</a></li>
+                <li><a href="http://127.0.0.1:5500/quienessomos.html">Sobre nosotros</a></li>
+                <li><a href="#">Politica de privacidad</a></li>
+                <li><a href="#" id="Ingresar">Ingresar</a></li>
+                <li><button id="Registrar">Crear cuenta</button></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <div id="main">
+        <h2>Encontrar la casa de tus sueños <br>
+            nunca había sido tan fácil</h2>
+        <h3>En nombrePag.com contamos con X inmuebles en venta y renta
+        </h3>
+
+        <div id="explorar">
+            <button class="btnExplorar" id="btnVenta">Venta</button>
+            <button class="btnExplorar" id="btnRenta">Renta</button>
+            <div id="fondocanon">
+                <select class="txtDExplorar">
+                    <option value="">Tipo de residencia</option>
+                    <option value="">Residencial</option>
+                    <option value="">Comercial</option>
+                    <option value="">Industrial</option>
+                </select>
+                <select class="txtDExplorar">
+                    <option value="">Estado</option>
+                    <option value="">Aguascalientes</option>
+                    <option value="">Baja California</option>
+                    <option value="">Baja California Sur</option>
+                    <option value="">Campeche</option>
+                    <option value="">Chiapas</option>
+                    <option value="">Chihuahua</option>
+                </select>
+                <input type="text" placeholder="Ciudad, Colonia o Delegación" class="txtDExplorar" id="txtColonia">
+                <img src="/img/lupa.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <dialog  id="vIngresar" class="popup">
+        <button id="btnCerrar" class="btnCerrarX">X</button>
+        <h2>Ingresar</h2>
+        <h3>Bienvenido de nuevo!</h3>
+        <form>
+            <fieldset>
+                <label for="loginCorreo" class="labelLog">Ingresa tu correo electronico</label>
+                <input type="email" class="loginInfo" placeholder="(ej: @gmail.com, @yahoo.com)" id="loginCorreo">        
+            </fieldset>
+            <fieldset>
+                <label for="loginPassword" class="labelLog">Ingresa tu contraseña</label>
+                <input type="password" class="loginInfo" placeholder="Contraseña" id="loginPassword">
+                
+            </fieldset>
+        </form>
+        <a href="#" id="recoverPass">No recuerdo la contraseña/correo</a>
+        <button id="btnIngresar" class="btnPopup">Ingresar</button>
+        <a href="#" id="nuevaCuenta">¿No tienes cuenta? Crea una</a>
+        <span id="copylogin">&copy; Mi tienda todos los derechos reservados 2022</span>
+        </dialog>
+
+    <dialog id="vRegistro" class="popup">
+        <button id="btnCerrar2" class="btnCerrarX">X</button>
+        <h2>Registrarse</h2>
+        <h3>Crea tu cuenta en minutos!</h3>
+        <form>
+            <fieldset>
+                <label for="txtName" id="lblName" >Nombre(s)</label>
+                <label for="txtApellidos" id="lblApellidos" >Apellidos</label>
+                <input type="text" id="txtName" class="txtReg">
+                <input type="text" class="txtReg" id="txtApellidos">
+               
+            </fieldset>
+            <fieldset>
+                <label for="txtBDate" id="lblBDate" >Fecha de nacimiento</label>
+                <label for="txtTel" id="lblTel" >Número de teléfono</label>
+                <input type="date" class="txtReg" id="txtBDate" >
+                <input type="tel" class="txtReg" id="txtTel" placeholder="ej: 6361125643">
+          
+                
+                
+            </fieldset>
+            <fieldset>
+                <label for="txtEmail" id="lblEmail" >Correo</label>
+                <input type="email" class="txtReg" id="txtEmail" placeholder="ej: @gmail.com, @yahoo.com">
+            </fieldset>
+            <fieldset>
+                <label for="txtPassword" id="lblPassword" >Password</label>
+                <input type="password" class="txtReg" id="txtPassword">
+            </fieldset>
+        </form>
+        <button id="btnCrearC" class="btnPopup">Crear Cuenta</button>
+        <a href="#" id="YTCuenta">Ya tengo una cuenta</a>
+        <span id="copylogin2">&copy; Mi tienda todos los derechos reservados 2022</span>
+    </dialog>
+    <section id="productos">
+        <h2>Propiedades cerca de ti</h2>
+        <div class="card">
+            <img src="./img/header.jpg" alt="">
+            <h3>Casa en Lomas Del Valle</h3>
+            <h4>Estado de México</h4>
+            <h5>$1,000,000.00</h5>
+            <button class="verMas">Más Información</button>
+        </div>
+
+        <div class="card">
+            <img src="./img/header.jpg" alt="">
+            <h3>Casa en Lomas Del Valle</h3>
+            <h4>Estado de México</h4>
+            <h5>$1,000,000.00</h5>
+            <button class="verMas">Más Información</button>
+        </div>
+
+        <div class="card">
+            <img src="./img/header.jpg" alt="">
+            <h3>Casa en Lomas Del Valle</h3>
+            <h4>Estado de México</h4>
+            <h5>$1,000,000.00</h5>
+            <button class="verMas">Más Información</button>
+        </div>
+
+        <div class="card">
+            <img src="./img/header.jpg" alt="">
+            <h3>Casa en Lomas Del Valle</h3>
+            <h4>Estado de México</h4>
+            <h5>$1,000,000.00</h5>
+            <button class="verMas">Más Información</button>
+        </div>
+
+        <div class="card">
+            <img src="./img/header.jpg" alt="">
+            <h3>Casa en Lomas Del Valle</h3>
+            <h4>Estado de México</h4>
+            <h5>$1,000,000.00</h5>
+            <button class="verMas">Más Información</button>
+        </div>
+
+        <div class="card">
+            <img src="./img/header.jpg" alt="">
+            <h3>Casa en Lomas Del Valle</h3>
+            <h4>Estado de México</h4>
+            <h5>$1,000,000.00</h5>
+            <button class="verMas">Más Información</button>
+        </div>
+    </section>
+    <footer id="bottomPrincipal">
+        <ul>
+            <li><a href="">Contacta con nosotros</a></li>
+            <li><a href="http://127.0.0.1:5500/quienessomos.html">Quiénes Somos</a></li>
+            <span>&copy; Mi tienda todos los derechos reservados 2022</span>
+            <li><a href="">Politica de Privacidad</a></li>
+            <li><a href="http://127.0.0.1:5500/politicacookies.html">Politica de Cookies</a></li>
+
+        </ul>
+    </footer>
+    <script src="./js/code.js"></script>
+</body>
+</html>

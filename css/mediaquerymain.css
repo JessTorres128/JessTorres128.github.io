@@ -1,0 +1,58 @@
+@media screen and (max-width:820px) {
+   
+    body{
+        background-color: red;
+    }
+    header div h1{
+        font-size: .9rem;
+        margin-left: 5px;
+    }
+    header nav ul li{
+        margin-top: 25px;
+    }
+    header nav ul li a{
+        font-size: .8rem;
+    }
+
+    header >nav > ul > li > button{
+        font-size: 1rem;
+    }
+    #Ingresar{
+       margin-right: 10px;
+        float: right;
+    }
+    header >nav > ul > li > button{
+        top: 10px;
+    }
+
+    div#main > h2 {
+        font-size: 3rem;
+    }
+    div#main div#explorar{
+        width: 90%;
+    }
+
+    div#main div#explorar div#fondocanon{
+        width: 100%;
+    }
+
+    div#main div#explorar div#fondocanon img{
+        width: 30px;
+        height: 30px;
+    }
+
+    dialog#vIngresar{
+        width: 55%;
+        margin-left: 23%;
+    }
+    footer#bottomPrincipal ul li, footer#bottomPrincipal ul span{
+        margin-top: 5px;
+        margin-left: 8px;
+    }
+
+    dialog#vRegistro{
+        margin-left: 10%;
+        width: 80%;
+    }
+
+}
